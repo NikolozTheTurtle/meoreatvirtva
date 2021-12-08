@@ -1,0 +1,1385 @@
+@font-face {
+    font-family: mont;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: montbold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: domine;
+    src: url(../fonts/Domine-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@mixin fontfunction($size, $fam, $color) {
+    font-size: $size;
+    font-family: $fam;
+    color: $color;
+}
+
+@mixin diagonalline(){
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: #ffac56;
+        width: 79px;
+        height: 1px;
+        bottom: 27px;
+        left: -11px;
+        transform: rotate(45deg);
+        z-index: 200;
+        display: none;
+    }    
+}
+
+@mixin pillmaker() {
+    position: absolute;
+    background-color: transparent;
+    width: 110px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    top: 20px;
+    left: 20px;
+    border: 2px solid #ffac56;
+    text-align: center;
+    @include fontfunction(12px, mont, white);
+}
+
+@mixin verticalline($right, $backcolor) {
+    &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        background-color: $backcolor;
+        width: 1px;
+        top: 0;
+        right: $right;
+    }
+}
+
+body {
+    header {
+        .subnav {
+            height: 40px;
+            background-color: #262829;
+            .container {
+                height: 100%;
+                position: relative;
+                @include verticalline(201px, #505253);
+                .subnavtext {
+                    height: 100%;
+                    p {
+                        padding-top: 10px;
+                        padding-bottom: -4px;
+                        @include fontfunction(12px, mont, #a2a5a6);
+                        span {
+                            color: #ffffff;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    p:first-child {
+                        padding-right: 68px;
+                    }
+                }
+            }
+        }
+        .dropdown-toggle::after {
+            display: none !important;
+        } 
+        .mainnav {
+            .container {
+                & > a{
+                    padding: 22px 0px;
+                }
+                .navbar-toggler-icon {
+                    background-image: url(../photos/togglericon.svg);
+                }
+                .collapse {
+                    ul {
+                        li {
+                            a {
+                                padding: 0 18px;
+                                @include fontfunction(14px, mont, #4e4e4e);
+                                &:hover {
+                                    color: #ffac55;
+                                }
+                            }
+                        }
+                        li:last-child {
+                            a {
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .headercar {
+            height: 700px;
+            .carousel-inner {
+                .container {
+                    .carouselcard {
+                        z-index: 5;
+                        width: 458px;
+                        max-width: 100%;
+                        bottom: 0;
+                        .orangehead {
+                            background-color: #ffac56;
+                            h5 {
+                                padding-top: 33px;
+                                padding-left: 39px;
+                                @include fontfunction(14px, mont, white);
+                            }
+                            p {
+                                padding-left: 41px;
+                                padding-bottom: 24px;
+                                @include fontfunction(30px, lato, white)
+                            }
+                        }
+                        .myrow {
+                            background-color: #03b6e7;
+                            display: flex;
+                            border-bottom: 1px solid #00a6d3;
+                            .myblocks {
+                                &:hover {
+                                    background-color: #00a6d3;
+                                }
+                                border-right: 1px solid #00a6d3;
+                                width: 50%;
+                                a {
+                                    display: block;
+                                    width: 100%;
+                                    text-decoration: none;
+                                    .icon {
+                                        padding: 35px 0 9px 40px;
+                                    }
+                                    .text {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding-bottom: 29px;
+                                        p {
+                                            padding-left: 39px;
+                                            @include fontfunction(14px, mont, white)
+                                        }
+                                    }
+                                }
+                            }
+                            .myblocks:first-child {
+                                a {
+                                    .text {
+                                        img {
+                                            padding-right: 27px;
+                                        }
+                                    }
+                                }
+                            }
+                            .myblocks:last-child {
+                                border-right: 0;
+                                a {
+                                    .text {
+                                        img {
+                                            padding-right: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .myrow:last-child {
+                            border-bottom: 0;
+                            .moreblock {
+                                width: 50%;
+                                &:hover {
+                                    background-color: #00a6d3;
+                                }
+                                a {
+                                    display: block;
+                                    width: 100%;
+                                    text-decoration: none;
+                                    width: auto;
+                                    @include fontfunction(13px, mont, white);
+                                    background-color: #16d428;
+                                    padding: 16px 34px;
+                                    margin: 48px 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                height: 100%;
+                .carousel-item {
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+
+            button {
+                height: fit-content;
+                align-items: center;
+                width: 46px;
+                top: 297px;
+                img {
+                    background-color:  #262829;
+                    padding: 45px 18px;
+                    
+                }
+            }
+        }
+    }
+    section {
+        .secabout {
+            margin-top: 95px;
+            margin-bottom: 200px;
+            .container {
+                .row {
+                    --bs-gutter-x: 0;
+                    .col-7{
+                        max-width: 100%;
+                        .abtext{
+                            padding-right: 49px;
+                            h4 {
+                                padding-top: 8px;
+                                @include fontfunction(14px, mont, #898e8f);
+                            }
+                            h1{
+                                padding-right: 1px;
+                                @include fontfunction(32px, montbold, #343a3b);
+                                padding-bottom: 14px;
+                            }
+                            p {
+                                @include fontfunction(15px, domine, #838b8c);
+                                padding-bottom: 43px;
+                            }
+                            & > button {
+                                @include fontfunction(13px, mont, #ffffff);
+                                background-color: #16d428;
+                                padding: 11px 25px;
+                            }
+                        }
+                    }
+                    .col-5{
+                        width: 457px;
+                        height: 255px;
+                        .exel {
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: 163px;
+                            width: 237px;
+                            height: 281px;
+                            img {
+                                z-index: 5;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            .success25 {
+                                &::before {
+                                    position: absolute;
+                                    width: 225px;
+                                    height: 18px;
+                                    content: "";
+                                    top: 6px;
+                                    left: 6px;
+                                    background-color: #03b6e7;
+                                    z-index: 300;
+                                }
+                                z-index: 4;
+                                box-shadow: 1px 1px 9px gray;
+                                background-color: #03b6e7;
+                                border: 6px solid white;
+                                .insidesuccess{
+                                    
+                                    margin: 18px 17px 17px 17px;
+                                    z-index: 3;
+                                    p:first-child{
+                                        padding-top: 99px;
+                                        @include fontfunction(70px, mont, white)
+                                    }
+                                    p:last-child{
+                                        padding-bottom: 26px;
+                                        padding-right: 6px;
+                                        letter-spacing: 1px;
+                                        margin-top: -20px;
+                                        @include fontfunction(10px, mont, white)
+                                    }
+                                    background-color: #03b6e7;
+                                    border: 1px solid #35c5ec;
+                                }
+                            }
+                        }
+                        img{
+                           object-fit: cover;
+                           object-position: top;
+                        }
+                    }
+                }
+            }
+        }  
+        .steps {
+            margin-top: -105px;
+            background-color: #e7eff1;
+            .container {
+                .stepheader {
+                    padding-top: 93px;
+                        & > h6 {
+                            @include fontfunction(14px, mont, #898e8f);
+                        }
+                        & > h2 {
+                            @include fontfunction(32px, montbold, #343a3b);
+                            margin-top: -1px;
+                            padding-bottom: 20px;
+                        }
+                }
+                .mysteprow {
+                    --bs-gutter-x: 0;
+                    .col-md-4, .col-8 {
+                        padding-right: 70px;
+                        #boost {
+                            margin-top: -8px;
+                        }
+                        #service {
+                            margin-top: -3px;
+                        } 
+                        .stepcardtext {
+                            & > h4 {
+                                padding-top: 30px;
+                                @include fontfunction(20px, mont, #16d428);
+                            }
+                            & > h3 {
+                                padding-bottom: 16px;
+                                @include fontfunction(18px, montbold, #343a3b);
+                            }
+                            & > p {
+                                @include fontfunction(15px, domine, #838b8c);
+                                padding-bottom: 74px;
+                            }
+                        }
+                        .scard3 {
+                            h4 {
+                                padding-top: 27px;
+                            }
+                        }
+                        .scard2 {
+                            h4 {
+                                padding-top: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .projects {
+            .container {
+                .proheader {
+                        padding-top: 93px;
+                        & > h6 {
+                            @include fontfunction(14px, mont, #898e8f);
+                        }
+                        & > h2 {
+                            @include fontfunction(32px, montbold, #343a3b);
+                            padding-bottom: 28px;
+                        }
+                        
+                }
+                .row {
+                    .triangleactive {
+                        bottom: 0;
+                        left: 0;
+                        z-index: 21;
+                        display: none;
+                    }
+                    .triangle {
+                        bottom: 0;
+                        left: 0;
+                        z-index: 20;
+                    }
+                    .plus {
+                        bottom: 10px;
+                        left: 10px;
+                        z-index: 22;
+                    }
+                    margin-bottom: 45px;
+                    .pill {
+                        @include pillmaker();
+                    }
+                    --bs-gutter-x: 0;
+                    .oldmancol{
+                        padding-right: 15px;
+                        height: 464px; 
+                        .oldman {
+                            @include diagonalline();
+                            .oldmanhov {
+                                width: 100% !important;
+                                display: none;
+                                background-color: #ffac56;
+                                z-index: 3;
+                                align-items: center;
+                                .hovtext {
+                                    margin: auto;
+                                    & > h4 {
+                                        @include fontfunction(18px, montbold, white);
+                                    }
+                                    & > p {
+                                        width: 300px;
+                                        max-width: 100%;
+                                        @include fontfunction(15px, domine, #fffdfa);
+                                    }
+                                }   
+                            }
+                            &:hover {
+                                & > .triangleactive {
+                                    display: block
+                                }
+                                .oldmanhov {
+                                    display: flex;
+                                }
+                                &::before {
+                                    display: block
+                                }
+                            }
+                            height: 100%;
+                            img {
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+                    }
+                    .rowcol {
+                        padding-left: 15px;
+                        .row {
+                            margin-bottom: 0;
+                            --bs-gutter-x: 0;
+                        }
+                        .rowcolrow1 {
+                            height: 227px;
+                            .col-sm-6 {
+                                height: 100%;
+                                padding-bottom: 15px;
+                                img {
+                                    object-position: center;
+                                    object-fit: cover;
+                                }
+                            }
+                            .ortextcol {
+                                @include diagonalline();
+                                &::before {
+                                    bottom: 42px;
+                                }
+                                .ortexthov {
+                                    display: none;
+                                    width: 262px;
+                                    height: 212px !important;
+                                    background-color: #ffac56;
+                                    z-index: 3;
+                                    align-items: center;
+                                    .hovtext {
+                                        margin: auto;
+                                        width: 228px;
+                                        & > h4 {
+                                            @include fontfunction(18px, montbold, white);
+                                        }
+                                        & > p {
+                                            @include fontfunction(15px, domine, #fffdfa);
+                                        }
+                                    }   
+                                }
+                                &:hover {
+                                    & > .triangleactive {
+                                        display: block
+                                    }
+                                    .ortexthov {
+                                        display: flex;
+                                    }
+                                    &::before {
+                                        display: block
+                                    }
+                                }
+                                .triangleactive {
+                                    bottom: 15px;
+                                    left: 0;
+                                    z-index: 21;
+                                    display: none;
+                                }
+                                .triangle {
+                                    bottom: 15px;
+                                    left: 0px;
+                                    z-index: 20;
+                                }
+                                .plus {
+                                    bottom: 25px;
+                                    left: 10px;
+                                    z-index: 22;
+                                }
+                                padding-right: 15px;
+                            }
+                            .plantcol {
+                                @include diagonalline();
+                                &::before {
+                                    left: 4px;
+                                    bottom: 42px;
+                                }
+                                .planthov {
+                                    display: none;
+                                    width: 262px;
+                                    height: 212px !important;
+                                    background-color: #ffac56;
+                                    z-index: 3;
+                                    align-items: center;
+                                    .hovtext {
+                                        margin: auto;
+                                        width: 228px;
+                                        & > h4 {
+                                            @include fontfunction(18px, montbold, white);
+                                        }
+                                        & > p {
+                                            @include fontfunction(15px, domine, #fffdfa);
+                                        }
+                                    }   
+                                }
+                                &:hover {
+                                    & > .triangleactive {
+                                        display: block
+                                    }
+                                    .planthov {
+                                        display: flex;
+                                    }
+                                    &::before {
+                                        display: block
+                                    }
+                                }
+                                .triangleactive {
+                                    bottom: 15px;
+                                    left: 15px;
+                                    z-index: 21;
+                                    display: none;
+                                }
+                                .triangle {
+                                    bottom: 15px;
+                                    left: 15px;
+                                    z-index: 20;
+                                }
+                                .plus {
+                                    bottom: 25px;
+                                    left: 25px;
+                                    z-index: 22;
+                                }
+                                .pill {
+                                    left: 35px;
+                                }
+                                padding-left: 15px;
+                            }
+                        }
+                        .rowcolrow2 {
+                            height: 237px;
+                            .col {
+                                @include diagonalline();
+                                .cityhov {
+                                    width: 100% !important;
+                                    height: 222px !important;
+                                    display: none;
+                                    background-color: #ffac56;
+                                    z-index: 3;
+                                    align-items: center;
+                                    .hovtext {
+                                        margin: auto;
+                                        & > h4 {
+                                            @include fontfunction(18px, montbold, white);
+                                        }
+                                        & > p {
+                                            width: 300px;
+                                            @include fontfunction(15px, domine, #fffdfa);
+                                        }
+                                    }      
+                                }
+                                &:hover {
+                                    & > .triangleactive {
+                                        display: block
+                                    }
+                                    .cityhov {
+                                    display: flex;
+                                    }
+                                    &::before {
+                                        display: block
+                                    }
+                                }
+                                .triangleactive {
+                                    bottom: 0;
+                                    left: 0;
+                                    z-index: 21;
+                                    display: none;
+                                }
+                                .pill {
+                                    top: 35px;
+                                }
+                                padding-top: 15px;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                & > .btn {
+                    display: block;
+                    margin: auto;
+                    padding: 12px 29px 11px 29px;
+                    @include fontfunction(13px, mont, white);
+                    background-color: #16d428;
+                    margin-bottom: 95px;
+                }
+            }
+        }  
+        .testimonials {
+            padding-bottom: 56px;
+            background-color: #03b6e7;
+            & > .container {
+                .testheader {
+                    h6 {
+                        padding-top: 93px;
+                        @include fontfunction(14px, mont, #a6ecff);
+                    }
+                    h2 {
+                        @include fontfunction(32px, montbold, white);
+                    }
+                }
+            }
+            .quotecar {
+                min-height: 326px;
+                height: 100%;
+                .myind {
+                    top: 232px;
+                    right: 0;
+                    left: 82.6%;
+                    button {
+                        background-color: transparent;
+                        border: 0;
+                        text-indent: 0px;
+                        
+                    }
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .container {
+                            .quotebody {
+                                span {
+                                    left: 96px;
+                                    top: 143px;
+                                    hr {
+                                        opacity: 1;
+                                        display: block;
+                                        width: 17px;
+                                        height: 2px;
+                                        color: white;
+                                        
+                                    }
+                                }
+                                justify-content: space-between;
+                                display: flex;
+                                .quote {
+                                    margin-top: 50px;
+                                    width: 67px;
+                                    height: 47px;
+                                }                                
+                                & > p {
+                                    line-height: 30px;
+                                    @include fontfunction(15px, domine, #ddf8ff);
+                                    margin-left: 30px;
+                                    margin-right: 30px;
+                                    padding-top: 40px;
+                                }
+                            }
+                            .clientrow {
+                                margin-top: 95px;
+                                .col-3 {
+                                    .client {
+                                        display: flex;
+                                        img {
+                                            width: 67px;
+                                            height: 67px;
+                                            border-radius: 50%;
+                                        }
+                                        .clienttext {
+                                            padding-left: 30px;
+                                            p:first-child {
+                                                padding-top: 12px;
+                                                padding-bottom: 2px;
+                                                @include fontfunction(14px, montbold, white);
+                                            }
+                                            p:last-child {
+                                                @include fontfunction(15px, domine, #ddf8ff);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                }
+            }
+        }    
+        .ourblogs {
+            height: 740px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            background-color: #e7eff1;
+            .container {
+                .row {
+                    --bs-gutter-x: 0;
+                    .col-lg-6 {
+                        height: 747px;
+                        max-height: fit-content;
+                        .blogheader {
+                            display: flex;
+                            padding-top: 95px;
+                            .bheadertext {
+                                h6 {
+                                    @include fontfunction(14px, mont, #898e8f);
+                                }
+                                h2 {
+                                    letter-spacing: -1px;
+                                    @include fontfunction(30px, montbold, #343a3b);
+                                }
+                            }
+                            .bheaderbtn {
+                                padding-top: 15px;
+                                padding-left: 65px;
+                                padding-right: 24px;
+                                .btn {
+                                    width: 140px;
+                                    background-color: transparent;
+                                    @include fontfunction(12px, mont, #606668);
+                                    font-weight: 600;
+                                    letter-spacing: -1px;
+                                    padding: 6px 0px 5px;
+                                }
+                                .btn:first-child {
+                                    border: 2px solid #ffac56;
+                                    margin-right: 5px;
+                                }
+                                .btn:last-child {
+                                    border: 2px solid #989fa0;
+                                }
+                            }    
+                        }
+                        .blogbody {
+                            .para {
+                                h5 {
+                                    padding-top: 46px;
+                                    @include fontfunction(15px, domine, #343a3b);
+                                    span:last-child {
+                                        color: #16d428;
+                                    }
+                                }
+                                h3 {
+                                    padding-bottom: 10px;
+                                    @include fontfunction(18px, montbold, #343a3b);
+                                    text-transform: uppercase;
+                                }
+                                p {
+                                    width: 480px;
+                                    max-width: 100%;
+                                    @include fontfunction(15px, domine, #838b8c);
+                                }
+                            }
+                            .para:first-child {
+                                h5 {
+                                    padding-top: 41px;
+                                }
+                            }
+                        }
+                        img {
+                            height: 100%;
+                            width: 985px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+        .contact {
+            padding-bottom: 95px;
+            .container {
+                .contactheader {
+                    h6 {
+                        padding-top: 93px;
+                        @include fontfunction(14px, mont, #898e8f);
+                    }
+                    h2{
+                        padding-bottom: 25px;
+                        @include fontfunction(32px, montbold, #343a3b);
+                    }
+                }
+                .contactbody {
+                    .row {
+                        
+                        --bs-gutter-x: 0;
+                        .col-lg-4 {
+                            height: 128px;
+                            padding-right: 16px;
+                            padding-left: 16px;
+                            .contcard {
+                                height: 100%;
+                                border: 1px solid #e1eaec;
+                                padding-left: 34px;
+                                padding-top: 41px;
+                                padding-bottom: 26px;
+                                display: flex;
+                                img {
+                                    width: 58px;
+                                    height: 59px;
+                                }
+                                .concardt {
+                                    margin-top: -6px;
+                                    padding-left: 42px;
+                                    p:first-child {
+                                        @include fontfunction(18px, montbold, #343a3b);
+                                    }
+                                    p:last-child {
+                                        @include fontfunction(18px, domine, #343a3b);
+                                    }
+                                }
+                            }
+                        }
+                        .col-lg-4:first-child {
+                            padding-left: 0 !important;
+                            padding-right: 22px;
+                        }
+                        .col-lg-4:nth-child(2){
+                            padding-left: 10px;
+                            padding-right: 12px;
+                            img {
+                                width: 56px;
+                                height: 44px;
+                            }
+                        }
+                        .col-lg-4:last-child {
+                            padding-left: 20px;
+                            padding-right: 2px;
+                            img {
+                                width: 56px;
+                                height: 56px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        background-color: #262829;
+        .foot {
+            .container {
+                .row {
+                    padding-bottom: 89px;
+                    border-bottom: 1px solid #323334;
+                    --bs-gutter-x: 0;
+                    .col-xl-6 {
+                        p:first-child {
+                            padding-top: 88px;
+                            @include fontfunction(20px, montbold, #e1e1e1);
+                        }
+                        p:nth-child(2){
+                            width: 390px;
+                            max-width: 100%;
+                            @include fontfunction(15px, domine, #838b8c);
+                            padding-bottom: 23px;
+                            padding-top: 5px;
+                        }
+                        form {
+                            max-width: 100%;
+                            width: 514px;
+                            input {
+                                padding: 16px 0 16px 34px;
+                                width: 100%;
+                                max-width: 100%;
+                                background-color: #323334;
+                                border: 0;
+                                @include fontfunction(13px, mont, #5e5e5e);
+                            }
+                            .btn {
+                                @include fontfunction(15px, mont, white);
+                                background-color: #16d428;
+                                width: 154px;
+                                height: 100%;
+                                right: 0;
+                            }
+                        }
+                    }
+                    .col-xl-6:last-child {
+                        display: flex;
+                        div {
+                            p {
+                                @include fontfunction(20px, montbold, #e1e1e1);
+                            }
+                            a {
+                                padding-top: 10px;
+                                text-decoration: none;
+                                display: block;
+                                @include fontfunction(13px, mont, #838b8c);
+                            }
+                        }
+                        div:first-child {
+                            padding-right: 71px;
+                        }
+                        div:nth-child(2){
+                            padding-right: 81px;
+                        }
+                    }
+                }
+                & > p {
+                    @include fontfunction(15px, domine, #838b8c);
+                    padding-top: 17px;
+                    padding-bottom: 53px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    body section .secabout .container .row .col-7 {
+        width: 100% !important;
+        .abtext {
+            text-align: center !important;
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+    }
+    body section .secabout .container .row .col-5 {
+        margin: auto; 
+    }
+    .para {
+        padding-right: 15px;
+    }
+    body section .ourblogs .container .row .col-6 .blogheader .bheaderbtn .btn:last-child {
+        margin-top: 15px;
+    }
+    body section .contact .container .contactbody .row .col-lg-4 .contcard {
+        padding-left: 20px;
+    }
+    body section .contact .container .contactbody .row .col-lg-4 .contcard .concardt {
+        padding-left: 15px;
+    }
+    body footer .foot .container .row .col-6 form .btn {
+        right: 0;
+    }
+    body footer .foot .container .row .col-6:first-child{
+        padding-right: 30px;
+    }
+    body footer .foot .container .row .col-xl-6:last-child {
+        justify-content: center;
+    }
+    body footer .foot .container .row .col-xl-6 p:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+    body footer .foot .container .row .col-xl-6 form {
+        margin: auto;
+    }
+}
+@media  (min-width: 992px) and (max-width: 1200px) {
+    body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:last-child {
+        margin-top: 15px;
+    }    
+}
+@media screen and (max-width: 768px) {
+    body {
+        header {
+            .subnav {
+                .container {
+                    &::before {
+                        display: none;
+                    }
+                    .subnavtext {
+                        width: 100%;
+                        justify-content: center !important;
+                        
+                    }
+                }
+            }
+        }
+    }
+    body section .steps .container .stepheader {
+        padding-top: 110px;
+        text-align: center;
+    }
+    body {
+        section {
+            .steps {
+                .container {
+                    .mysteprow {
+                        justify-content: center;
+                        .col-8 {
+                            img {
+                                display: block;
+                                margin: auto;
+                            }
+                            padding-right: 0;
+                            .stepcardtext {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span {
+        top: 285px !important;
+    }
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow {
+        margin-top: 95px;
+        justify-content: center;
+    }
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client .clienttext {
+        padding-left: 0;
+        text-align: center;
+    }
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client {
+        display: block;
+    }
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client img {
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 460px) {
+    body {
+        header {
+            .subnav {
+                height: fit-content;
+                .container {
+                    .subnavtext {
+                        display: block !important;
+                        text-align: center;
+                        p:first-child {
+                            padding-right: 0;
+                        }
+                        p {
+                            margin-bottom: 0;
+                        }
+                        P:last-child {
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .headercar {
+                .carousel-inner {
+                    .container {
+                        .carouselcard {
+                            .orangehead {
+                                h5 {
+                                    font-size: 13px;
+                                    padding-left: 0;
+                                    text-align: center;
+                                }
+                                p {
+                                    padding-left: 0;
+                                    text-align: center;
+                                }
+                            }
+                            .myrow {
+                                .myblocks {
+                                    a {
+                                        .icon {
+                                            padding-left: 20px;
+                                        }
+                                        .text{
+                                            p {
+                                                font-size: 12px;
+                                                padding-left: 19px;
+                                            }
+                                            img {
+                                                padding-right: 20px !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                .moreblock {
+                                    a {
+                                        font-size: 12px !important;
+                                        margin: 48px 12px !important;
+                                        padding: 16px 0 !important;
+                                        text-align: center !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    body section .secabout {
+        margin-top: -100px;
+    }
+    body section .contact .container .contactbody .row .col-lg-4 .contcard {
+        padding-left: 30px !important;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1053px){
+    .carousel-control-next, .carousel-control-prev {
+        top: 20px !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 813px){
+    .carousel-control-next, .carousel-control-prev {
+        top: 20px !important;
+    }
+}
+@media screen and (max-width: 639px){
+    .carousel-control-next, .carousel-control-prev {
+        top: 20px !important;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    body section .projects .container .row .rowcol .rowcolrow1 .ortextcol:hover .ortexthov {
+        width: 255px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov {
+        width: 255px !important;
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    body {
+        header {
+            .mainnav {
+                .container {
+                    & > a {
+                        padding-left: 18px;
+                    }
+                }
+            }
+            .headercar {
+                .carousel-inner{
+                    .container {
+                        .carouselcard {
+                            padding-left: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    body section .projects .container .row .rowcol .rowcolrow2 {
+        height: 237px;
+        margin-top: 227px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow2 {
+        margin-top: 216px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 {
+        padding-left: 15px;
+        padding-right: 15px;
+        .col-sm-6 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol .triangle {
+        left: 0;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol .plus {
+        left: 10px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .col-sm-6 img {
+        object-position: top;
+    }
+    body section .projects .container .row .oldmancol {
+        padding-right: 15px !important;
+        padding-left: 15px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol .pill {
+        left: 20px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol::before {
+        left: -11px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol .triangleactive {
+        left: 0;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol:hover .planthov {
+        width: 521px;
+    }
+    body section .projects .container .proheader {
+        text-align: center;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .ortextcol:hover .ortexthov {
+        width: 100% !important;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov {
+        width: 100% !important;
+    }
+    body section .testimonials .quotecar .myind {
+        left: 74.6% !important;
+    }
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span {
+        display: none;
+    }
+    body section .testimonials > .container .testheader h6 {
+        text-align: center;
+    }
+    body section .testimonials > .container .testheader h2 {
+       text-align: center;
+    }
+    body section .ourblogs .container .row .col-lg-6 .blogheader {
+        padding-left: 20px;
+    }
+    body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn {
+        padding-top: 15px;
+        padding-left: 65px;
+        padding-right: 0;
+    }
+    body footer .foot .container .row .col-xl-6:last-child div:first-child {
+        padding-right: 30px;
+    }
+    body footer .foot .container .row .col-xl-6:last-child div:nth-child(2) {
+        padding-right: 31px;
+    }
+    body header .headercar .carousel-inner .container .carouselcard .myrow:last-child .moreblock a {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 991px){
+    body section .projects .container .proheader {
+        text-align: center;
+    }
+    body section .projects .container .row .oldmancol {
+        padding-right: 0;
+    }
+    body section .projects .container .row .rowcol {
+        padding-left: 0;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 {
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .ortexthov {
+        width: 345px;   
+    }
+    body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov {
+        width: 345px;
+    }
+    body section .steps .container .stepheader > h6 {
+        text-align: center;
+        padding-top: 20px;
+    }
+    body section .testimonials > .container .testheader h6 {
+        text-align: center;
+    } 
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span {
+        left: 96px;
+        top: 230px;
+    }
+    body section .testimonials .quotecar .myind {
+        left: 80.6%;
+    }
+    .manlap {
+        display: none;
+    }
+    body section .ourblogs .container .row .col-lg-6 .blogheader {
+        justify-content: space-between;
+    }
+    .para {
+        padding-right: 0;
+        text-align: center;
+    }
+    body section .ourblogs .container .row .col-lg-6 .blogbody .para p {
+        width: 100%;
+    }
+    body section .contact .container .contactbody .row .col-lg-4 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-top: 15px;
+    }
+    body section .contact .container .contactbody .row .col-lg-4 .contcard {
+        padding-left: 100px;
+    }
+    body section .contact .container .contactbody .row .col-lg-4 .contcard .concardt {
+        padding-left: 25px;
+    }
+    body section .ourblogs .container .contactheader{
+        text-align: center;
+    }
+    body section .contact .container .contactheader h6, h2 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 535px) {
+    body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:last-child {
+        margin-top: 15px;
+    }   
+    body section .ourblogs .container .row .col-lg-6 .blogheader .bheadertext h6 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 422px) {
+    body section .ourblogs {
+        height: 850px;
+    }
+}
+@media screen and (max-width: 459px) {
+    body {
+        header {
+            .headercar {
+                .carousel-inner{
+                    .container {
+                        .carouselcard {
+                            padding-left: 0;
+                            top: 0;
+                        }
+                    }
+                    .carousel-item {
+                        display: none;
+                    }
+                    button {
+                        display: none !important;
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+    body footer .foot .container .row .col-xl-6:last-child {
+        display: block;
+    }
+    body footer .foot .container .row .col-xl-6:last-child div:first-child, .findustry, .ffollow {
+        padding-right: 0px !important;
+        text-align: center;
+    }
+    body footer .foot .container > p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 381px) {
+    body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client .clienttext p:last-child {
+        font-size: 11px;
+    }
+}

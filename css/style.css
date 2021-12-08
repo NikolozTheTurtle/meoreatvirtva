@@ -1,0 +1,1389 @@
+@font-face {
+  font-family: mont;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: montbold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: domine;
+  src: url(../fonts/Domine-Regular.ttf);
+}
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Lato-Light.ttf);
+}
+body header .subnav {
+  height: 40px;
+  background-color: #262829;
+}
+body header .subnav .container {
+  height: 100%;
+  position: relative;
+}
+body header .subnav .container::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  background-color: #505253;
+  width: 1px;
+  top: 0;
+  right: 201px;
+}
+body header .subnav .container .subnavtext {
+  height: 100%;
+}
+body header .subnav .container .subnavtext p {
+  padding-top: 10px;
+  padding-bottom: -4px;
+  font-size: 12px;
+  font-family: mont;
+  color: #a2a5a6;
+}
+body header .subnav .container .subnavtext p span {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+body header .subnav .container .subnavtext p:first-child {
+  padding-right: 68px;
+}
+body header .dropdown-toggle::after {
+  display: none !important;
+}
+body header .mainnav .container > a {
+  padding: 22px 0px;
+}
+body header .mainnav .container .navbar-toggler-icon {
+  background-image: url(../photos/togglericon.svg);
+}
+body header .mainnav .container .collapse ul li a {
+  padding: 0 18px;
+  font-size: 14px;
+  font-family: mont;
+  color: #4e4e4e;
+}
+body header .mainnav .container .collapse ul li a:hover {
+  color: #ffac55;
+}
+body header .mainnav .container .collapse ul li:last-child a {
+  padding-right: 0;
+}
+body header .headercar {
+  height: 700px;
+}
+body header .headercar .carousel-inner {
+  height: 100%;
+}
+body header .headercar .carousel-inner .container .carouselcard {
+  z-index: 5;
+  width: 458px;
+  max-width: 100%;
+  bottom: 0;
+}
+body header .headercar .carousel-inner .container .carouselcard .orangehead {
+  background-color: #ffac56;
+}
+body header .headercar .carousel-inner .container .carouselcard .orangehead h5 {
+  padding-top: 33px;
+  padding-left: 39px;
+  font-size: 14px;
+  font-family: mont;
+  color: white;
+}
+body header .headercar .carousel-inner .container .carouselcard .orangehead p {
+  padding-left: 41px;
+  padding-bottom: 24px;
+  font-size: 30px;
+  font-family: lato;
+  color: white;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow {
+  background-color: #03b6e7;
+  display: flex;
+  border-bottom: 1px solid #00a6d3;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks {
+  border-right: 1px solid #00a6d3;
+  width: 50%;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks:hover {
+  background-color: #00a6d3;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks a .icon {
+  padding: 35px 0 9px 40px;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks a .text {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 29px;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks a .text p {
+  padding-left: 39px;
+  font-size: 14px;
+  font-family: mont;
+  color: white;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks:first-child a .text img {
+  padding-right: 27px;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks:last-child {
+  border-right: 0;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks:last-child a .text img {
+  padding-right: 24px;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow:last-child {
+  border-bottom: 0;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow:last-child .moreblock {
+  width: 50%;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow:last-child .moreblock:hover {
+  background-color: #00a6d3;
+}
+body header .headercar .carousel-inner .container .carouselcard .myrow:last-child .moreblock a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  width: auto;
+  font-size: 13px;
+  font-family: mont;
+  color: white;
+  background-color: #16d428;
+  padding: 16px 34px;
+  margin: 48px 40px;
+}
+body header .headercar .carousel-inner .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+}
+body header .headercar button {
+  height: fit-content;
+  align-items: center;
+  width: 46px;
+  top: 297px;
+}
+body header .headercar button img {
+  background-color: #262829;
+  padding: 45px 18px;
+}
+body section .secabout {
+  margin-top: 95px;
+  margin-bottom: 200px;
+}
+body section .secabout .container .row {
+  --bs-gutter-x: 0;
+}
+body section .secabout .container .row .col-7 {
+  max-width: 100%;
+}
+body section .secabout .container .row .col-7 .abtext {
+  padding-right: 49px;
+}
+body section .secabout .container .row .col-7 .abtext h4 {
+  padding-top: 8px;
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .secabout .container .row .col-7 .abtext h1 {
+  padding-right: 1px;
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+  padding-bottom: 14px;
+}
+body section .secabout .container .row .col-7 .abtext p {
+  font-size: 15px;
+  font-family: domine;
+  color: #838b8c;
+  padding-bottom: 43px;
+}
+body section .secabout .container .row .col-7 .abtext > button {
+  font-size: 13px;
+  font-family: mont;
+  color: #ffffff;
+  background-color: #16d428;
+  padding: 11px 25px;
+}
+body section .secabout .container .row .col-5 {
+  width: 457px;
+  height: 255px;
+}
+body section .secabout .container .row .col-5 .exel {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 163px;
+  width: 237px;
+  height: 281px;
+}
+body section .secabout .container .row .col-5 .exel img {
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body section .secabout .container .row .col-5 .exel .success25 {
+  z-index: 4;
+  box-shadow: 1px 1px 9px gray;
+  background-color: #03b6e7;
+  border: 6px solid white;
+}
+body section .secabout .container .row .col-5 .exel .success25::before {
+  position: absolute;
+  width: 225px;
+  height: 18px;
+  content: "";
+  top: 6px;
+  left: 6px;
+  background-color: #03b6e7;
+  z-index: 300;
+}
+body section .secabout .container .row .col-5 .exel .success25 .insidesuccess {
+  margin: 18px 17px 17px 17px;
+  z-index: 3;
+  background-color: #03b6e7;
+  border: 1px solid #35c5ec;
+}
+body section .secabout .container .row .col-5 .exel .success25 .insidesuccess p:first-child {
+  padding-top: 99px;
+  font-size: 70px;
+  font-family: mont;
+  color: white;
+}
+body section .secabout .container .row .col-5 .exel .success25 .insidesuccess p:last-child {
+  padding-bottom: 26px;
+  padding-right: 6px;
+  letter-spacing: 1px;
+  margin-top: -20px;
+  font-size: 10px;
+  font-family: mont;
+  color: white;
+}
+body section .secabout .container .row .col-5 img {
+  object-fit: cover;
+  object-position: top;
+}
+body section .steps {
+  margin-top: -105px;
+  background-color: #e7eff1;
+}
+body section .steps .container .stepheader {
+  padding-top: 93px;
+}
+body section .steps .container .stepheader > h6 {
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .steps .container .stepheader > h2 {
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+  margin-top: -1px;
+  padding-bottom: 20px;
+}
+body section .steps .container .mysteprow {
+  --bs-gutter-x: 0;
+}
+body section .steps .container .mysteprow .col-md-4, body section .steps .container .mysteprow .col-8 {
+  padding-right: 70px;
+}
+body section .steps .container .mysteprow .col-md-4 #boost, body section .steps .container .mysteprow .col-8 #boost {
+  margin-top: -8px;
+}
+body section .steps .container .mysteprow .col-md-4 #service, body section .steps .container .mysteprow .col-8 #service {
+  margin-top: -3px;
+}
+body section .steps .container .mysteprow .col-md-4 .stepcardtext > h4, body section .steps .container .mysteprow .col-8 .stepcardtext > h4 {
+  padding-top: 30px;
+  font-size: 20px;
+  font-family: mont;
+  color: #16d428;
+}
+body section .steps .container .mysteprow .col-md-4 .stepcardtext > h3, body section .steps .container .mysteprow .col-8 .stepcardtext > h3 {
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-family: montbold;
+  color: #343a3b;
+}
+body section .steps .container .mysteprow .col-md-4 .stepcardtext > p, body section .steps .container .mysteprow .col-8 .stepcardtext > p {
+  font-size: 15px;
+  font-family: domine;
+  color: #838b8c;
+  padding-bottom: 74px;
+}
+body section .steps .container .mysteprow .col-md-4 .scard3 h4, body section .steps .container .mysteprow .col-8 .scard3 h4 {
+  padding-top: 27px;
+}
+body section .steps .container .mysteprow .col-md-4 .scard2 h4, body section .steps .container .mysteprow .col-8 .scard2 h4 {
+  padding-top: 32px;
+}
+body section .projects .container .proheader {
+  padding-top: 93px;
+}
+body section .projects .container .proheader > h6 {
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .projects .container .proheader > h2 {
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+  padding-bottom: 28px;
+}
+body section .projects .container .row {
+  margin-bottom: 45px;
+  --bs-gutter-x: 0;
+}
+body section .projects .container .row .triangleactive {
+  bottom: 0;
+  left: 0;
+  z-index: 21;
+  display: none;
+}
+body section .projects .container .row .triangle {
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+}
+body section .projects .container .row .plus {
+  bottom: 10px;
+  left: 10px;
+  z-index: 22;
+}
+body section .projects .container .row .pill {
+  position: absolute;
+  background-color: transparent;
+  width: 110px;
+  padding-bottom: 5px;
+  padding-top: 6px;
+  top: 20px;
+  left: 20px;
+  border: 2px solid #ffac56;
+  text-align: center;
+  font-size: 12px;
+  font-family: mont;
+  color: white;
+}
+body section .projects .container .row .oldmancol {
+  padding-right: 15px;
+  height: 464px;
+}
+body section .projects .container .row .oldmancol .oldman {
+  height: 100%;
+}
+body section .projects .container .row .oldmancol .oldman::before {
+  position: absolute;
+  content: "";
+  background-color: #ffac56;
+  width: 79px;
+  height: 1px;
+  bottom: 27px;
+  left: -11px;
+  transform: rotate(45deg);
+  z-index: 200;
+  display: none;
+}
+body section .projects .container .row .oldmancol .oldman .oldmanhov {
+  width: 100% !important;
+  display: none;
+  background-color: #ffac56;
+  z-index: 3;
+  align-items: center;
+}
+body section .projects .container .row .oldmancol .oldman .oldmanhov .hovtext {
+  margin: auto;
+}
+body section .projects .container .row .oldmancol .oldman .oldmanhov .hovtext > h4 {
+  font-size: 18px;
+  font-family: montbold;
+  color: white;
+}
+body section .projects .container .row .oldmancol .oldman .oldmanhov .hovtext > p {
+  width: 300px;
+  max-width: 100%;
+  font-size: 15px;
+  font-family: domine;
+  color: #fffdfa;
+}
+body section .projects .container .row .oldmancol .oldman:hover > .triangleactive {
+  display: block;
+}
+body section .projects .container .row .oldmancol .oldman:hover .oldmanhov {
+  display: flex;
+}
+body section .projects .container .row .oldmancol .oldman:hover::before {
+  display: block;
+}
+body section .projects .container .row .oldmancol .oldman img {
+  object-fit: cover;
+  object-position: center;
+}
+body section .projects .container .row .rowcol {
+  padding-left: 15px;
+}
+body section .projects .container .row .rowcol .row {
+  margin-bottom: 0;
+  --bs-gutter-x: 0;
+}
+body section .projects .container .row .rowcol .rowcolrow1 {
+  height: 227px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .col-sm-6 {
+  height: 100%;
+  padding-bottom: 15px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .col-sm-6 img {
+  object-position: center;
+  object-fit: cover;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol {
+  padding-right: 15px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol::before {
+  position: absolute;
+  content: "";
+  background-color: #ffac56;
+  width: 79px;
+  height: 1px;
+  bottom: 27px;
+  left: -11px;
+  transform: rotate(45deg);
+  z-index: 200;
+  display: none;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol::before {
+  bottom: 42px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .ortexthov {
+  display: none;
+  width: 262px;
+  height: 212px !important;
+  background-color: #ffac56;
+  z-index: 3;
+  align-items: center;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .ortexthov .hovtext {
+  margin: auto;
+  width: 228px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .ortexthov .hovtext > h4 {
+  font-size: 18px;
+  font-family: montbold;
+  color: white;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .ortexthov .hovtext > p {
+  font-size: 15px;
+  font-family: domine;
+  color: #fffdfa;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol:hover > .triangleactive {
+  display: block;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol:hover .ortexthov {
+  display: flex;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol:hover::before {
+  display: block;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .triangleactive {
+  bottom: 15px;
+  left: 0;
+  z-index: 21;
+  display: none;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .triangle {
+  bottom: 15px;
+  left: 0px;
+  z-index: 20;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .plus {
+  bottom: 25px;
+  left: 10px;
+  z-index: 22;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol {
+  padding-left: 15px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol::before {
+  position: absolute;
+  content: "";
+  background-color: #ffac56;
+  width: 79px;
+  height: 1px;
+  bottom: 27px;
+  left: -11px;
+  transform: rotate(45deg);
+  z-index: 200;
+  display: none;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol::before {
+  left: 4px;
+  bottom: 42px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov {
+  display: none;
+  width: 262px;
+  height: 212px !important;
+  background-color: #ffac56;
+  z-index: 3;
+  align-items: center;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov .hovtext {
+  margin: auto;
+  width: 228px;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov .hovtext > h4 {
+  font-size: 18px;
+  font-family: montbold;
+  color: white;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov .hovtext > p {
+  font-size: 15px;
+  font-family: domine;
+  color: #fffdfa;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol:hover > .triangleactive {
+  display: block;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol:hover .planthov {
+  display: flex;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol:hover::before {
+  display: block;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .triangleactive {
+  bottom: 15px;
+  left: 15px;
+  z-index: 21;
+  display: none;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .triangle {
+  bottom: 15px;
+  left: 15px;
+  z-index: 20;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .plus {
+  bottom: 25px;
+  left: 25px;
+  z-index: 22;
+}
+body section .projects .container .row .rowcol .rowcolrow1 .plantcol .pill {
+  left: 35px;
+}
+body section .projects .container .row .rowcol .rowcolrow2 {
+  height: 237px;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col {
+  padding-top: 15px;
+  height: 100%;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col::before {
+  position: absolute;
+  content: "";
+  background-color: #ffac56;
+  width: 79px;
+  height: 1px;
+  bottom: 27px;
+  left: -11px;
+  transform: rotate(45deg);
+  z-index: 200;
+  display: none;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col .cityhov {
+  width: 100% !important;
+  height: 222px !important;
+  display: none;
+  background-color: #ffac56;
+  z-index: 3;
+  align-items: center;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col .cityhov .hovtext {
+  margin: auto;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col .cityhov .hovtext > h4 {
+  font-size: 18px;
+  font-family: montbold;
+  color: white;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col .cityhov .hovtext > p {
+  width: 300px;
+  font-size: 15px;
+  font-family: domine;
+  color: #fffdfa;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col:hover > .triangleactive {
+  display: block;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col:hover .cityhov {
+  display: flex;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col:hover::before {
+  display: block;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col .triangleactive {
+  bottom: 0;
+  left: 0;
+  z-index: 21;
+  display: none;
+}
+body section .projects .container .row .rowcol .rowcolrow2 .col .pill {
+  top: 35px;
+}
+body section .projects .container > .btn {
+  display: block;
+  margin: auto;
+  padding: 12px 29px 11px 29px;
+  font-size: 13px;
+  font-family: mont;
+  color: white;
+  background-color: #16d428;
+  margin-bottom: 95px;
+}
+body section .testimonials {
+  padding-bottom: 56px;
+  background-color: #03b6e7;
+}
+body section .testimonials > .container .testheader h6 {
+  padding-top: 93px;
+  font-size: 14px;
+  font-family: mont;
+  color: #a6ecff;
+}
+body section .testimonials > .container .testheader h2 {
+  font-size: 32px;
+  font-family: montbold;
+  color: white;
+}
+body section .testimonials .quotecar {
+  min-height: 326px;
+  height: 100%;
+}
+body section .testimonials .quotecar .myind {
+  top: 232px;
+  right: 0;
+  left: 82.6%;
+}
+body section .testimonials .quotecar .myind button {
+  background-color: transparent;
+  border: 0;
+  text-indent: 0px;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody {
+  justify-content: space-between;
+  display: flex;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span {
+  left: 96px;
+  top: 143px;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span hr {
+  opacity: 1;
+  display: block;
+  width: 17px;
+  height: 2px;
+  color: white;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody .quote {
+  margin-top: 50px;
+  width: 67px;
+  height: 47px;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody > p {
+  line-height: 30px;
+  font-size: 15px;
+  font-family: domine;
+  color: #ddf8ff;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 40px;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow {
+  margin-top: 95px;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client {
+  display: flex;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client img {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client .clienttext {
+  padding-left: 30px;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client .clienttext p:first-child {
+  padding-top: 12px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-family: montbold;
+  color: white;
+}
+body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client .clienttext p:last-child {
+  font-size: 15px;
+  font-family: domine;
+  color: #ddf8ff;
+}
+body section .ourblogs {
+  height: 740px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #e7eff1;
+}
+body section .ourblogs .container .row {
+  --bs-gutter-x: 0;
+}
+body section .ourblogs .container .row .col-lg-6 {
+  height: 747px;
+  max-height: fit-content;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader {
+  display: flex;
+  padding-top: 95px;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheadertext h6 {
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheadertext h2 {
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-family: montbold;
+  color: #343a3b;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn {
+  padding-top: 15px;
+  padding-left: 65px;
+  padding-right: 24px;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn {
+  width: 140px;
+  background-color: transparent;
+  font-size: 12px;
+  font-family: mont;
+  color: #606668;
+  font-weight: 600;
+  letter-spacing: -1px;
+  padding: 6px 0px 5px;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:first-child {
+  border: 2px solid #ffac56;
+  margin-right: 5px;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:last-child {
+  border: 2px solid #989fa0;
+}
+body section .ourblogs .container .row .col-lg-6 .blogbody .para h5 {
+  padding-top: 46px;
+  font-size: 15px;
+  font-family: domine;
+  color: #343a3b;
+}
+body section .ourblogs .container .row .col-lg-6 .blogbody .para h5 span:last-child {
+  color: #16d428;
+}
+body section .ourblogs .container .row .col-lg-6 .blogbody .para h3 {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: montbold;
+  color: #343a3b;
+  text-transform: uppercase;
+}
+body section .ourblogs .container .row .col-lg-6 .blogbody .para p {
+  width: 480px;
+  max-width: 100%;
+  font-size: 15px;
+  font-family: domine;
+  color: #838b8c;
+}
+body section .ourblogs .container .row .col-lg-6 .blogbody .para:first-child h5 {
+  padding-top: 41px;
+}
+body section .ourblogs .container .row .col-lg-6 img {
+  height: 100%;
+  width: 985px;
+  object-fit: cover;
+  object-position: center;
+}
+body section .contact {
+  padding-bottom: 95px;
+}
+body section .contact .container .contactheader h6 {
+  padding-top: 93px;
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .contact .container .contactheader h2 {
+  padding-bottom: 25px;
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+}
+body section .contact .container .contactbody .row {
+  --bs-gutter-x: 0;
+}
+body section .contact .container .contactbody .row .col-lg-4 {
+  height: 128px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+body section .contact .container .contactbody .row .col-lg-4 .contcard {
+  height: 100%;
+  border: 1px solid #e1eaec;
+  padding-left: 34px;
+  padding-top: 41px;
+  padding-bottom: 26px;
+  display: flex;
+}
+body section .contact .container .contactbody .row .col-lg-4 .contcard img {
+  width: 58px;
+  height: 59px;
+}
+body section .contact .container .contactbody .row .col-lg-4 .contcard .concardt {
+  margin-top: -6px;
+  padding-left: 42px;
+}
+body section .contact .container .contactbody .row .col-lg-4 .contcard .concardt p:first-child {
+  font-size: 18px;
+  font-family: montbold;
+  color: #343a3b;
+}
+body section .contact .container .contactbody .row .col-lg-4 .contcard .concardt p:last-child {
+  font-size: 18px;
+  font-family: domine;
+  color: #343a3b;
+}
+body section .contact .container .contactbody .row .col-lg-4:first-child {
+  padding-left: 0 !important;
+  padding-right: 22px;
+}
+body section .contact .container .contactbody .row .col-lg-4:nth-child(2) {
+  padding-left: 10px;
+  padding-right: 12px;
+}
+body section .contact .container .contactbody .row .col-lg-4:nth-child(2) img {
+  width: 56px;
+  height: 44px;
+}
+body section .contact .container .contactbody .row .col-lg-4:last-child {
+  padding-left: 20px;
+  padding-right: 2px;
+}
+body section .contact .container .contactbody .row .col-lg-4:last-child img {
+  width: 56px;
+  height: 56px;
+}
+body footer {
+  background-color: #262829;
+}
+body footer .foot .container .row {
+  padding-bottom: 89px;
+  border-bottom: 1px solid #323334;
+  --bs-gutter-x: 0;
+}
+body footer .foot .container .row .col-xl-6 p:first-child {
+  padding-top: 88px;
+  font-size: 20px;
+  font-family: montbold;
+  color: #e1e1e1;
+}
+body footer .foot .container .row .col-xl-6 p:nth-child(2) {
+  width: 390px;
+  max-width: 100%;
+  font-size: 15px;
+  font-family: domine;
+  color: #838b8c;
+  padding-bottom: 23px;
+  padding-top: 5px;
+}
+body footer .foot .container .row .col-xl-6 form {
+  max-width: 100%;
+  width: 514px;
+}
+body footer .foot .container .row .col-xl-6 form input {
+  padding: 16px 0 16px 34px;
+  width: 100%;
+  max-width: 100%;
+  background-color: #323334;
+  border: 0;
+  font-size: 13px;
+  font-family: mont;
+  color: #5e5e5e;
+}
+body footer .foot .container .row .col-xl-6 form .btn {
+  font-size: 15px;
+  font-family: mont;
+  color: white;
+  background-color: #16d428;
+  width: 154px;
+  height: 100%;
+  right: 0;
+}
+body footer .foot .container .row .col-xl-6:last-child {
+  display: flex;
+}
+body footer .foot .container .row .col-xl-6:last-child div p {
+  font-size: 20px;
+  font-family: montbold;
+  color: #e1e1e1;
+}
+body footer .foot .container .row .col-xl-6:last-child div a {
+  padding-top: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  font-family: mont;
+  color: #838b8c;
+}
+body footer .foot .container .row .col-xl-6:last-child div:first-child {
+  padding-right: 71px;
+}
+body footer .foot .container .row .col-xl-6:last-child div:nth-child(2) {
+  padding-right: 81px;
+}
+body footer .foot .container > p {
+  font-size: 15px;
+  font-family: domine;
+  color: #838b8c;
+  padding-top: 17px;
+  padding-bottom: 53px;
+}
+
+@media screen and (max-width: 1200px) {
+  body section .secabout .container .row .col-7 {
+    width: 100% !important;
+  }
+  body section .secabout .container .row .col-7 .abtext {
+    text-align: center !important;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  body section .secabout .container .row .col-5 {
+    margin: auto;
+  }
+
+  .para {
+    padding-right: 15px;
+  }
+
+  body section .ourblogs .container .row .col-6 .blogheader .bheaderbtn .btn:last-child {
+    margin-top: 15px;
+  }
+
+  body section .contact .container .contactbody .row .col-lg-4 .contcard {
+    padding-left: 20px;
+  }
+
+  body section .contact .container .contactbody .row .col-lg-4 .contcard .concardt {
+    padding-left: 15px;
+  }
+
+  body footer .foot .container .row .col-6 form .btn {
+    right: 0;
+  }
+
+  body footer .foot .container .row .col-6:first-child {
+    padding-right: 30px;
+  }
+
+  body footer .foot .container .row .col-xl-6:last-child {
+    justify-content: center;
+  }
+
+  body footer .foot .container .row .col-xl-6 p:nth-child(2) {
+    width: 100%;
+    text-align: center;
+  }
+
+  body footer .foot .container .row .col-xl-6 form {
+    margin: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:last-child {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header .subnav .container::before {
+    display: none;
+  }
+  body header .subnav .container .subnavtext {
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  body section .steps .container .stepheader {
+    padding-top: 110px;
+    text-align: center;
+  }
+
+  body section .steps .container .mysteprow {
+    justify-content: center;
+  }
+  body section .steps .container .mysteprow .col-8 {
+    padding-right: 0;
+  }
+  body section .steps .container .mysteprow .col-8 img {
+    display: block;
+    margin: auto;
+  }
+  body section .steps .container .mysteprow .col-8 .stepcardtext {
+    text-align: center;
+  }
+
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span {
+    top: 285px !important;
+  }
+
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow {
+    margin-top: 95px;
+    justify-content: center;
+  }
+
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client .clienttext {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client {
+    display: block;
+  }
+
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client img {
+    display: block;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  body header .subnav {
+    height: fit-content;
+  }
+  body header .subnav .container .subnavtext {
+    display: block !important;
+    text-align: center;
+  }
+  body header .subnav .container .subnavtext p:first-child {
+    padding-right: 0;
+  }
+  body header .subnav .container .subnavtext p {
+    margin-bottom: 0;
+  }
+  body header .subnav .container .subnavtext P:last-child {
+    padding-bottom: 10px;
+  }
+  body header .headercar .carousel-inner .container .carouselcard .orangehead h5 {
+    font-size: 13px;
+    padding-left: 0;
+    text-align: center;
+  }
+  body header .headercar .carousel-inner .container .carouselcard .orangehead p {
+    padding-left: 0;
+    text-align: center;
+  }
+  body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks a .icon {
+    padding-left: 20px;
+  }
+  body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks a .text p {
+    font-size: 12px;
+    padding-left: 19px;
+  }
+  body header .headercar .carousel-inner .container .carouselcard .myrow .myblocks a .text img {
+    padding-right: 20px !important;
+  }
+  body header .headercar .carousel-inner .container .carouselcard .myrow .moreblock a {
+    font-size: 12px !important;
+    margin: 48px 12px !important;
+    padding: 16px 0 !important;
+    text-align: center !important;
+  }
+
+  body section .secabout {
+    margin-top: -100px;
+  }
+
+  body section .contact .container .contactbody .row .col-lg-4 .contcard {
+    padding-left: 30px !important;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1053px) {
+  .carousel-control-next, .carousel-control-prev {
+    top: 20px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 813px) {
+  .carousel-control-next, .carousel-control-prev {
+    top: 20px !important;
+  }
+}
+@media screen and (max-width: 639px) {
+  .carousel-control-next, .carousel-control-prev {
+    top: 20px !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  body section .projects .container .row .rowcol .rowcolrow1 .ortextcol:hover .ortexthov {
+    width: 255px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov {
+    width: 255px !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  body header .mainnav .container > a {
+    padding-left: 18px;
+  }
+  body header .headercar .carousel-inner .container .carouselcard {
+    padding-left: 18px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow2 {
+    height: 237px;
+    margin-top: 227px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow2 {
+    margin-top: 216px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body section .projects .container .row .rowcol .rowcolrow1 .col-sm-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol .triangle {
+    left: 0;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol .plus {
+    left: 10px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .col-sm-6 img {
+    object-position: top;
+  }
+
+  body section .projects .container .row .oldmancol {
+    padding-right: 15px !important;
+    padding-left: 15px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol .pill {
+    left: 20px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol::before {
+    left: -11px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol .triangleactive {
+    left: 0;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol:hover .planthov {
+    width: 521px;
+  }
+
+  body section .projects .container .proheader {
+    text-align: center;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .ortextcol:hover .ortexthov {
+    width: 100% !important;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov {
+    width: 100% !important;
+  }
+
+  body section .testimonials .quotecar .myind {
+    left: 74.6% !important;
+  }
+
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span {
+    display: none;
+  }
+
+  body section .testimonials > .container .testheader h6 {
+    text-align: center;
+  }
+
+  body section .testimonials > .container .testheader h2 {
+    text-align: center;
+  }
+
+  body section .ourblogs .container .row .col-lg-6 .blogheader {
+    padding-left: 20px;
+  }
+
+  body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn {
+    padding-top: 15px;
+    padding-left: 65px;
+    padding-right: 0;
+  }
+
+  body footer .foot .container .row .col-xl-6:last-child div:first-child {
+    padding-right: 30px;
+  }
+
+  body footer .foot .container .row .col-xl-6:last-child div:nth-child(2) {
+    padding-right: 31px;
+  }
+
+  body header .headercar .carousel-inner .container .carouselcard .myrow:last-child .moreblock a {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  body section .projects .container .proheader {
+    text-align: center;
+  }
+
+  body section .projects .container .row .oldmancol {
+    padding-right: 0;
+  }
+
+  body section .projects .container .row .rowcol {
+    padding-left: 0;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 {
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .ortextcol .ortexthov {
+    width: 345px;
+  }
+
+  body section .projects .container .row .rowcol .rowcolrow1 .plantcol .planthov {
+    width: 345px;
+  }
+
+  body section .steps .container .stepheader > h6 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  body section .testimonials > .container .testheader h6 {
+    text-align: center;
+  }
+
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .quotebody span {
+    left: 96px;
+    top: 230px;
+  }
+
+  body section .testimonials .quotecar .myind {
+    left: 80.6%;
+  }
+
+  .manlap {
+    display: none;
+  }
+
+  body section .ourblogs .container .row .col-lg-6 .blogheader {
+    justify-content: space-between;
+  }
+
+  .para {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  body section .ourblogs .container .row .col-lg-6 .blogbody .para p {
+    width: 100%;
+  }
+
+  body section .contact .container .contactbody .row .col-lg-4 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 15px;
+  }
+
+  body section .contact .container .contactbody .row .col-lg-4 .contcard {
+    padding-left: 100px;
+  }
+
+  body section .contact .container .contactbody .row .col-lg-4 .contcard .concardt {
+    padding-left: 25px;
+  }
+
+  body section .ourblogs .container .contactheader {
+    text-align: center;
+  }
+
+  body section .contact .container .contactheader h6, h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 535px) {
+  body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:last-child {
+    margin-top: 15px;
+  }
+
+  body section .ourblogs .container .row .col-lg-6 .blogheader .bheadertext h6 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 422px) {
+  body section .ourblogs {
+    height: 850px;
+  }
+}
+@media screen and (max-width: 459px) {
+  body header .headercar .carousel-inner .container .carouselcard {
+    padding-left: 0;
+    top: 0;
+  }
+  body header .headercar .carousel-inner .carousel-item {
+    display: none;
+  }
+  body header .headercar .carousel-inner button {
+    display: none !important;
+  }
+  body header .headercar .carousel-inner button img {
+    display: none;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
+
+  body footer .foot .container .row .col-xl-6:last-child {
+    display: block;
+  }
+
+  body footer .foot .container .row .col-xl-6:last-child div:first-child, .findustry, .ffollow {
+    padding-right: 0px !important;
+    text-align: center;
+  }
+
+  body footer .foot .container > p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 381px) {
+  body section .testimonials .quotecar .carousel-inner .carousel-item .container .clientrow .col-3 .client .clienttext p:last-child {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
