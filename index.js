@@ -12,6 +12,7 @@ $(function () {
             $(".mm").load(href);
         }
     });
+    
     $(document).on("click", ".contact-load-btn", function (e) {
         e.preventDefault();
         $(".act-link").removeClass("act-link");
