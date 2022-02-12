@@ -66,6 +66,9 @@ body header .mainnav .container .collapse ul li a {
 body header .mainnav .container .collapse ul li a:hover {
   color: #ffac55;
 }
+body header .mainnav .container .collapse ul li .act-link {
+  color: #ffac55;
+}
 body header .mainnav .container .collapse ul li:last-child a {
   padding-right: 0;
 }
@@ -775,11 +778,13 @@ body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn {
   padding: 6px 0px 5px;
 }
 body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:first-child {
-  border: 2px solid #ffac56;
   margin-right: 5px;
 }
-body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn:last-child {
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .btn {
   border: 2px solid #989fa0;
+}
+body section .ourblogs .container .row .col-lg-6 .blogheader .bheaderbtn .act-blog {
+  border: 2px solid #ffac56;
 }
 body section .ourblogs .container .row .col-lg-6 .blogbody .para h5 {
   padding-top: 46px;
@@ -881,6 +886,228 @@ body section .contact .container .contactbody .row .col-lg-4:last-child {
 body section .contact .container .contactbody .row .col-lg-4:last-child img {
   width: 56px;
   height: 56px;
+}
+body section .start-sec {
+  background-color: #dce7ea;
+  overflow-x: hidden;
+}
+body section .start-sec .container .row {
+  --bs-gutter-x: 0;
+}
+body section .start-sec .container .row .col-lg-6 .start-text .start-ball {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: #ffac55;
+}
+body section .start-sec .container .row .col-lg-6 .start-text p {
+  position: relative;
+  z-index: 3;
+  padding: 130px 0 130px 19px;
+  font-size: 36px;
+  font-family: lato;
+  color: #1c1c1c;
+}
+body section .start-sec .container .row .col-lg-6 img {
+  height: 314px;
+  width: 1100px;
+  object-fit: cover;
+  object-position: 96%;
+}
+body section .start-sec .container .row .start-text-col {
+  position: relative;
+}
+body section .core-sec .container .core-header {
+  padding-top: 93px;
+}
+body section .core-sec .container .core-header > h6 {
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .core-sec .container .core-header > h2 {
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+  margin-top: -1px;
+  padding-bottom: 20px;
+}
+body section .core-sec .container .mycorerow {
+  --bs-gutter-x: 0;
+}
+body section .core-sec .container .mycorerow .col-md-4, body section .core-sec .container .mycorerow .col-8 {
+  padding-right: 70px;
+}
+body section .core-sec .container .mycorerow .col-md-4 .core-card-text > h3, body section .core-sec .container .mycorerow .col-8 .core-card-text > h3 {
+  padding-top: 30px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-family: montbold;
+  color: #343a3b;
+}
+body section .core-sec .container .mycorerow .col-md-4 .core-card-text > p, body section .core-sec .container .mycorerow .col-8 .core-card-text > p {
+  font-size: 15px;
+  font-family: domine;
+  color: #838b8c;
+  padding-bottom: 74px;
+}
+body section .core-sec .container .mycorerow .col-md-4 .scard3 h4, body section .core-sec .container .mycorerow .col-8 .scard3 h4 {
+  padding-top: 27px;
+}
+body section .core-sec .container .mycorerow .col-md-4 .scard2 h4, body section .core-sec .container .mycorerow .col-8 .scard2 h4 {
+  padding-top: 32px;
+}
+body section .vision-mission {
+  padding-bottom: 95px;
+  background-color: #e7eff1;
+}
+body section .vision-mission .container .row {
+  --bs-gutter-x: 0;
+}
+body section .vision-mission .container .row .col-lg-6 .vis-miss-header {
+  padding-top: 93px;
+}
+body section .vision-mission .container .row .col-lg-6 .vis-miss-header > h6 {
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .vision-mission .container .row .col-lg-6 .vis-miss-header > h2 {
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+  margin-top: -1px;
+  padding-bottom: 20px;
+}
+body section .vision-mission .container .row .col-lg-6 img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 236px;
+}
+body section .vision-mission .container .row .col-lg-6 .vis-miss-text {
+  padding-top: 40px;
+  padding-bottom: 75px;
+  font-size: 16px;
+  font-family: domnie;
+  color: #838b8c;
+}
+body section .vision-mission .container .row .col-lg-6:first-child {
+  padding-right: 15px;
+}
+body section .vision-mission .container .row .col-lg-6:last-child {
+  padding-left: 15px;
+}
+body section .vision-mission .contact-us-btn {
+  width: fit-content;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #16d428;
+  margin: auto;
+  font-size: 13px;
+  font-family: mont;
+  color: #ffffff;
+  text-decoration: none;
+}
+body section .supp-ind-sec .container .supp-ind-header {
+  padding-top: 93px;
+}
+body section .supp-ind-sec .container .supp-ind-header > h6 {
+  font-weight: bolder;
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .supp-ind-sec .container .supp-ind-header > h2 {
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+  margin-top: -1px;
+  padding-bottom: 20px;
+}
+body section .supp-ind-sec .container .row {
+  --bs-guter-x: 0;
+}
+body section .supp-ind-sec .container .row .col-lg-6 {
+  margin-bottom: 90px;
+  display: flex;
+}
+body section .supp-ind-sec .container .row .col-lg-6 .ind-ball {
+  position: relative;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  border: 1px solid #d5dfe2;
+}
+body section .supp-ind-sec .container .row .col-lg-6 .ind-ball img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body section .supp-ind-sec .container .row .col-lg-6 #business-shade {
+  box-shadow: 1px 1px 35px #c5c3c3;
+}
+body section .supp-ind-sec .container .row .col-lg-6 .ind-col-text {
+  padding-left: 53px;
+}
+body section .supp-ind-sec .container .row .col-lg-6 .ind-col-text h3 {
+  font-size: 18px;
+  font-family: montbold;
+  color: #343a3b;
+}
+body section .supp-ind-sec .container .row .col-lg-6 .ind-col-text p {
+  font-size: 15px;
+  font-family: domine;
+  color: #838b8c;
+  width: 348px;
+}
+body section .error {
+  border-top: 1px solid #e5eef0;
+  text-align: center;
+  padding-bottom: 100px;
+}
+body section .error .error-vis span {
+  font-size: 200px;
+  font-family: montbold;
+  color: #1c1c1c;
+}
+body section .error .error-text p {
+  margin-bottom: 0;
+}
+body section .error .error-text p:nth-child(1) {
+  font-size: 14px;
+  font-family: mont;
+  color: #898e8f;
+}
+body section .error .error-text p:nth-child(2) {
+  font-size: 32px;
+  font-family: montbold;
+  color: #343a3b;
+}
+body section .error .error-text p:nth-child(3) {
+  font-size: 18px;
+  font-family: domine;
+  color: #838b8c;
+}
+body section .error .back-menu-btn {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: mont;
+  color: white;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #16d428;
+  margin-top: 20px;
 }
 body footer {
   background-color: #262829;

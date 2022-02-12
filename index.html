@@ -10,10 +10,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header>
-        <div class="subnav">
+    <header >
+        <div class="subnav" id="goup">
             <div class="container ps-0 pe-0">
                 <div class="subnavtext d-flex justify-content-end">
                     <p><span> EMAIL :</span> INFO@CONSULTPLUS.COM</p>
@@ -33,22 +32,22 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link act-link" aria-current="page" href="insidePages/start.html" data-topic="start">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="insidePages/aboutus.html" data-topic="aboutus">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">INDUSTRY</a>
+                            <a class="nav-link" href="insidePages/industry.html" data-topic="industry">INDUSTRY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">SERVICES</a>
+                            <a class="nav-link" aria-current="page" href="insidePages/error404.html" data-topic="services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">PAGES</a>
+                            <a class="nav-link" aria-current="page" href="insidePages/error404.html" data-topic="pages">PAGES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#">CONTUCT US</a>
+                            <a class="nav-link" aria-current="page" href="insidePages/error404.html" id="nav-cont" data-topic="contactus">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -145,7 +144,7 @@
             </button>
         </div>
     </header>
-    <section>
+    <section class="mm">
         <div class="secabout">
             <div class="container">
                 <div class="row justify-content-end">
@@ -156,7 +155,7 @@
                             <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled</p>
-                            <button type="button" class="btn rounded-pill btn-lg">READ MORE</button>
+                            <button type="button" class="btn read-more-btn rounded-pill btn-lg">READ MORE</button>
                         </div>
                     </div>
                     <div class="col-5 ps-0 pe-0 position-relative">
@@ -460,12 +459,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="carousel-item h-100">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item h-100">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div> -->
                 </div>
             </div>
         </div>
@@ -479,8 +472,8 @@
                                 <h2 class="mb-0">OUR BLOG</h2>
                             </div>
                             <div class="bheaderbtn">
-                                <button type="button" class="btn rounded-pill btn-lg">TOP POSTS</button>
-                                <button type="button" class="btn rounded-pill btn-lg">CHECK ALL POST</button>
+                                <button type="button" class="btn rounded-pill btn-lg act-blog">TOP POSTS</button>
+                                <button type="button" class="btn rounded-pill btn-lg btn-all-post">CHECK ALL POST</button>
                             </div>
                         </div>
                         <div class="blogbody">
@@ -502,6 +495,18 @@
                                 <p>Popularised in the 1960s with the release of Letraset sheets
                                     containing Lorem Ipsum passages...</p>
                             </div>
+                        </div>
+                        <div class="blogbody-all d-none">
+                            <p>Blog1</p>
+                            <p>Blog2</p>
+                            <p>Blog3</p>
+                            <p>Blog4</p>
+                            <p>Blog5</p>
+                            <p>Blog6</p>
+                            <p>Blog7</p>
+                            <p>Blog8</p>
+                            <p>Blog9</p>
+                            <p>Blog10</p>
                         </div>
                     </div>
                     <div class="col-6 manlap">
@@ -566,13 +571,12 @@
                     <div class="col-xl-6">
                         <div class="fnavigation">
                             <p>NAVIGATION</p>
-                            <a href="">HOME</a>
-                            <a href="">ABOUT US</a>
-                            <a href="">INDUSTRY</a>
-                            <a href="">SERVICES</a>
-                            <a href="">PAGES</a>
-                            <a href="">CONTACT US</a>
-                        
+                            <a class="foot-link" href="#goup" data-link-type="start" data-if-error="start">HOME</a>
+                            <a class="foot-link" href="#goup" data-link-type="aboutus" data-if-error="aboutus">ABOUT US</a>
+                            <a class="foot-link" href="#goup" data-link-type="industry" data-if-error="industry">INDUSTRY</a>
+                            <a class="foot-link" href="#goup" data-link-type="error404" data-if-error="services">SERVICES</a>
+                            <a class="foot-link" href="#goup" data-link-type="error404" data-if-error="pages">PAGES</a>
+                            <a class="foot-link" href="#goup" data-link-type="error404" data-if-error="contactus">CONTACT US</a>
                         </div>
                         <div class="findustry">
                             <p>INDUSTRY</p>
@@ -617,6 +621,8 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
